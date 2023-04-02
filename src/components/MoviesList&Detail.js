@@ -17,7 +17,7 @@ const MoviesList = (props) => {
                 return (
                     <li onClick={(e) => handleClick(e, movie.id)} key={index}>
                         <img
-                            src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`}
+                            src={`https://image.tmdb.org/t/p/w200/${movie?.poster_path}`}
                             alt="movie-alt"
                         />
                         <section className="title-year">
@@ -47,7 +47,7 @@ const MovieDetails = ({ selectedMovie, setSelectedMovie }) => {
         <article className="movie-details">
             <section className="movie-detail-img">
                 <img
-                    src={`https://image.tmdb.org/t/p/w500/${selectedMovie?.poster_path}`} //
+                    src={`https://image.tmdb.org/t/p/w200/${selectedMovie?.poster_path}`} //
                     alt="movie-poster-alt"
                     className="movie-img"
                 />
