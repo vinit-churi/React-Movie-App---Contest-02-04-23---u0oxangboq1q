@@ -54,7 +54,7 @@ const MovieDetails = ({ selectedMovie, setSelectedMovie }) => {
             </section>
             <section className="movie-detail-title-year-plot">
                 <h2 className="movie-title-year">
-                    {selectedMovie.original_title} (
+                    {selectedMovie.title} (
                     {selectedMovie.release_date.slice(0, 4) || "0000"})
                 </h2>
                 <p className="movie-plot">{selectedMovie.overview}</p>
