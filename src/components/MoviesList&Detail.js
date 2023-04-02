@@ -25,7 +25,7 @@ const MoviesList = (props) => {
                                 {movie.original_title}
                             </h2>
                             <p className="movie-release-year">
-                                Release Year: {movie.release_date}
+                                Release Year: {movie.release_date.slice(0, 4)}
                             </p>
                         </section>
                     </li>
