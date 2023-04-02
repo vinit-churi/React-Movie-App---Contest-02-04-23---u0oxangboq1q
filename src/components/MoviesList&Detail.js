@@ -21,9 +21,7 @@ const MoviesList = (props) => {
                             alt="movie-alt"
                         />
                         <section className="title-year">
-                            <h2 className="movie-title">
-                                {movie.original_title}
-                            </h2>
+                            <h2 className="movie-title">{movie.title}</h2>
                             <p className="movie-release-year">
                                 Release Year: {movie.release_date.slice(0, 4)}
                             </p>
